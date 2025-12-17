@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat | Group 305</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menu" onclick="toggle()">☰</div>
+
+<div class="sidebar" id="side">
+  <a href="chat.html">الدردشة</a>
+  <a href="profile.html">الملف الشخصي</a>
+  <a href="#" onclick="logout()">تسجيل خروج</a>
+</div>
+
+<h1 class="logo">Group 305</h1>
+
+<div class="chat-box" id="messages"></div>
+
+<form class="chat-form" onsubmit="sendMessage(); return false;">
+  <input id="msg" placeholder="اكتب رسالة...">
+  <button>إرسال</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
