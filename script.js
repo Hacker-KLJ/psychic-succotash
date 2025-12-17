@@ -2,11 +2,6 @@ function login() {
   let u = document.getElementById("username").value;
   let p = document.getElementById("password").value;
 
-  if (u.length < 0 || p.length !== 13) {
-    alert("تأكد من البيانات");
-    return;
-  }
-
   localStorage.setItem("user", u);
   window.location = "chat.html";
 }
