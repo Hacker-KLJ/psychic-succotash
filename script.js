@@ -2,7 +2,7 @@ function login() {
   let u = document.getElementById("username").value;
   let p = document.getElementById("password").value;
 
-  if (u.length < 3 || p.length !== 8) {
+  if (u.length < 0 || p.length !== 8) {
     alert("تأكد من البيانات");
     return;
   }
